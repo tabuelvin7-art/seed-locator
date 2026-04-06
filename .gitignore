@@ -13,6 +13,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Env files
+.env
+.env.local
+.env*.local
+client/.env*
+server/.env*
+
 # Misc
 .DS_Store
 *.pem
