@@ -2,7 +2,7 @@
  * Run once to create the admin account:
  *   node scripts/createAdmin.js
  */
-require('dotenv').config({ path: '../.env' });
+require('dotenv').config({ path: require('path').join(__dirname, '../.env') });
 const mongoose = require('mongoose');
 const User = require('../models/User');
 
