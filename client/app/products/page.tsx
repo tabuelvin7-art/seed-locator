@@ -59,7 +59,7 @@ function ProductsContent() {
   const updateParam = (key: string, value: string) => {
     const params = new URLSearchParams(searchParams.toString());
     if (value) params.set(key, value); else params.delete(key);
-    params.delete('page');
+    if (key !== 'page') params.delete('page');
     router.push(`/products?${params}`);
   };
 
